@@ -1,0 +1,138 @@
+@-webkit-keyframes moving{
+	0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
+
+@keyframes moving{
+	0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
+
+@-webkit-keyframes moving-other{
+	0% {
+    transform: translateX(160px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes moving-other{
+	0% {
+    transform: translateX(160px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+#square{
+	fill:none;
+	stroke:#423AA3;
+	stroke-width:2;
+	stroke-miterlimit:10;
+}
+body:hover #square{
+	position: fixed;
+	-webkit-animation:moving 5s infinite alternate;
+	animation:moving 5s infinite alternate;
+}
+
+@-webkit-keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin-other{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spin-other{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(-360deg);
+	}
+}
+
+#cylinder #XMLID_11_{
+	fill:none;
+	stroke:#46EFA7;
+	stroke-width:3;
+	stroke-miterlimit:10;
+}
+
+body:hover #XMLID_11_{
+	stroke:#423AA3;
+	-webkit-animation:spin 5s infinite;
+	animation:spin 5s infinite;
+}
+
+#line{
+	fill:none;
+	stroke:#423AA3;
+	stroke-width:4;
+	stroke-dasharray:10,10;
+	stroke-miterlimit:10;
+}
+body:hover #line{
+	-webkit-animation:spin 3s infinite;
+	animation:spin 3s infinite;
+}
+
+#circle{
+	fill:#46EFA7;
+}
+#circle:hover{
+	fill:#423AA3;
+}
+
+#wave{
+	fill:#46EFA7;
+}
+
+body:hover #circle{
+	-webkit-animation:moving-other 3s infinite alternate;
+	animation:moving-other 3s infinite alternate;
+}
+
+#cube{
+	fill:none;
+	stroke:#423AA3;
+	stroke-miterlimit:10;
+}
+body:hover #cube{
+	-webkit-animation:spin-other 5s infinite;
+	animation:spin-other 5s infinite;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+svg{
+	background-color: #cdf6fc;
+}
